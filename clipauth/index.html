@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ClipAuth 개인정보처리방침 · Privacy Policy</title>
+<style>
+:root {
+  --primary: #2563eb;
+  --text: #1f2937;
+  --text-muted: #4b5563;
+  --bg: #f9fafb;
+  --card-bg: #ffffff;
+  --border: #e5e7eb;
+}
+* { box-sizing: border-box; }
+body {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 24px 20px 80px;
+  font: 16px/1.8 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--text);
+  background-color: var(--bg);
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(249, 250, 251, 0.92);
+  backdrop-filter: blur(8px);
+  padding: 16px 0 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 40px;
+}
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.logo-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+.lang-selector-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.lang-selector-box label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+select.lang-select {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: var(--card-bg);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+select.lang-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+section {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 28px;
+  margin-bottom: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  scroll-margin-top: 90px;
+}
+section:target {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+h1 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  color: #111827;
+  letter-spacing: -0.02em;
+}
+.date-badge {
+  display: inline-block;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+}
+h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 24px 0 8px;
+}
+p {
+  margin: 0 0 16px;
+  color: #374151;
+  word-break: break-word;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+a:hover {
+  text-decoration: none;
+}
+[dir="rtl"] {
+  text-align: right;
+}
+[dir="rtl"] .date-badge {
+  text-align: right;
+}
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <span class="logo-title">ClipAuth Legal</span>
+    <div class="lang-selector-box">
+      <label for="lang-dropdown">Language / 언어:</label>
+      <select id="lang-dropdown" class="lang-select" onchange="switchLanguage(this.value)">
+        <option value="ko">한국어 (Korean)</option>
+        <option value="en">English (English)</option>
+        <option value="ja">日本語 (Japanese)</option>
+        <option value="zh-CN">简体中文 (Chinese Simplified)</option>
+        <option value="zh-TW">繁體中文 (Chinese Traditional)</option>
+        <option value="es">Español (Spanish)</option>
+        <option value="es-419">Español - Latinoamérica (Latin American Spanish)</option>
+        <option value="de">Deutsch (German)</option>
+        <option value="fr">Français (French)</option>
+        <option value="pt-BR">Português - Brasil (Portuguese Brazil)</option>
+        <option value="it">Italiano (Italian)</option>
+        <option value="nl">Nederlands (Dutch)</option>
+        <option value="pl">Polski (Polish)</option>
+        <option value="ru">Русский (Russian)</option>
+        <option value="uk">Українська (Ukrainian)</option>
+        <option value="tr">Türkçe (Turkish)</option>
+        <option value="vi">Tiếng Việt (Vietnamese)</option>
+        <option value="id">Bahasa Indonesia (Indonesian)</option>
+        <option value="th">ไทย (Thai)</option>
+        <option value="ar">العربية (Arabic)</option>
+        <option value="he">עברית (Hebrew)</option>
+        <option value="hi">हिन्दी (Hindi)</option>
+        <option value="cs">Čeština (Czech)</option>
+        <option value="da">Dansk (Danish)</option>
+        <option value="fi">Suomi (Finnish)</option>
+        <option value="hu">Magyar (Hungarian)</option>
+        <option value="no">Norsk (Norwegian)</option>
+        <option value="ro">Română (Romanian)</option>
+        <option value="sk">Slovenčina (Slovak)</option>
+        <option value="sv">Svenska (Swedish)</option>
+      </select>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- 1. 한국어 (ko) -->
+<section id="ko" lang="ko">
+  <h1>개인정보처리방침</h1>
+  <div class="date-badge">ClipAuth · 2026년 10월 2일 개정</div>
+  <h2>1. 알림 접근</h2>
+  <p>ClipAuth는 사용자 동의 후 선택한 앱의 알림 내용을 기기 안에서 분석하여 인증번호를 찾습니다. 알림 원문과 인증번호를 개발자 서버에 전송하거나 파일·로그에 저장하지 않습니다. 화면이 켜져 있고 잠금이 해제된 상태에서만 복사합니다. Android 및 제조사 정책에 따라 감지가 제한될 수 있습니다. 자동 감지를 끄거나 연동 앱을 해제할 수 있으며, 기기 설정에서 알림 접근 권한을 철회할 수 있습니다.</p>
+  <h2>2. 최근 내역과 클립보드</h2>
+  <p>최근 인증번호·발신 앱 패키지명·복사 시각은 최대 20개, 5분 동안 프로세스 메모리에만 보관합니다. 화면 꺼짐, 리스너 연결 해제 또는 프로세스 종료 시 최근 내역을 삭제합니다. 사용자 설정과 앱 언어는 기기에 저장하며 앱 데이터 백업은 비활성화되어 있습니다. 시스템 클립보드는 별도 영역입니다. 내역 삭제나 화면 꺼짐은 클립보드를 지우지 않습니다. 민감 플래그는 지원되는 시스템 미리보기를 가리지만 붙여넣기, 키보드 또는 다른 앱의 보관까지 차단하지 않습니다.</p>
+  <h2>3. 광고</h2>
+  <p>Google AdMob과 광고 파트너는 광고 제공·측정·부정행위 방지를 위해 식별자, 기기 정보, 상호작용 및 진단 정보를 각 정책에 따라 처리할 수 있습니다. ClipAuth는 알림 원문과 인증번호를 광고 SDK에 제공하지 않습니다. 필요한 지역에서는 Google UMP로 동의 선택지를 제공하며, 광고 개인정보 설정이 표시되면 선택을 다시 변경할 수 있습니다. Google 개인정보처리방침: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. 선택적 후원 결제</h2>
+  <p>소비성 후원 상품은 Google Play Billing으로 결제합니다. 결제 수단 정보는 Google이 처리합니다. ClipAuth는 구매 완료 처리를 위해 상품 ID, 구매 상태 및 토큰을 처리하며 카드·계좌 정보를 저장하지 않습니다. 유료 기능이나 회원가입은 없습니다.</p>
+  <h2>5. 문의와 변경</h2>
+  <p>앱 자체의 계정 시스템 및 개발자 서버가 없습니다. 앱 데이터 삭제 또는 앱 제거 시 기기 설정값이 삭제됩니다. 클립보드와 외부 서비스의 데이터는 각 시스템 및 정책에 따릅니다. 개인정보 문의: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. 처리 방식이 바뀌면 이 방침을 갱신합니다.</p>
+</section>
+
+<!-- 2. English (en) -->
+<section id="en" lang="en">
+  <h1>Privacy policy</h1>
+  <div class="date-badge">ClipAuth · Updated October 2, 2026</div>
+  <h2>1. Notification access</h2>
+  <p>After your consent, ClipAuth analyzes notification content from apps you select, on your device, to identify verification codes. It does not send notification content or codes to a developer server, save them in files, or write them to logs. Copying requires the screen to be on and unlocked. Android and manufacturer restrictions can prevent detection. You can turn automatic detection off, deselect apps, or revoke Notification Access in device settings.</p>
+  <h2>2. Recent history and clipboard</h2>
+  <p>Recent codes, source app package names and copy times are held only in process memory, up to 20 entries for 5 minutes. History is removed on screen off, listener disconnection, or process exit. Settings and your app language are stored locally. Backup of app data is disabled. The system clipboard is separate: clearing history or turning the screen off does not clear the clipboard. The sensitive flag hides supported system previews, but does not prevent pasting or storage by keyboards or other apps.</p>
+  <h2>3. Advertising</h2>
+  <p>Google AdMob and advertising partners may process identifiers, device information, interactions and diagnostic data for advertising, measurement and fraud prevention under their policies. Notification content and verification codes are not supplied to the advertising SDK by ClipAuth. Where required, Google UMP presents consent choices; you can reopen the ad privacy options from settings when available. Google privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Optional support purchases</h2>
+  <p>Optional consumable support purchases are handled by Google Play Billing. Google handles payment credentials. ClipAuth processes product IDs, purchase state and tokens to complete purchases; it does not store card or bank details. No paid features or account are required.</p>
+  <h2>5. Contact and changes</h2>
+  <p>There is no developer account system or developer server for this app. Device settings are removed when app data is cleared or the app is uninstalled; clipboard and third-party data follow their respective systems and policies. Privacy inquiries: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. This policy will be updated if processing changes.</p>
+</section>
+
+<!-- 3. 日本語 (ja) -->
+<section id="ja" lang="ja">
+  <h1>プライバシーポリシー</h1>
+  <div class="date-badge">ClipAuth · 2026年10月2日更新</div>
+  <h2>1. 通知へのアクセス</h2>
+  <p>同意後、選択したアプリの通知を端末内で解析し、認証コードを検出します。通知本文やコードを開発者サーバー、ファイル、ログに保存・送信しません。画面が点灯しロックが解除されている場合のみコピーします。OSやメーカーの制限により検出できない場合があります。自動検出をオフにするか、端末設定で通知へのアクセスを解除できます。</p>
+  <h2>2. 最近の履歴とクリップボード</h2>
+  <p>最近のコード、送信元アプリのパッケージ名、コピー時刻は最大20件、5分間だけプロセスメモリに保持します。画面消灯、接続解除、プロセス終了時に履歴を削除します。設定と言語は端末に保存し、アプリデータのバックアップは無効です。履歴の削除や画面消灯ではシステムのクリップボードは消去されません。機密フラグは対応するプレビューを隠しますが、貼り付けやキーボードなどによる保存は防ぎません。</p>
+  <h2>3. 広告</h2>
+  <p>Google AdMobと広告パートナーは広告配信、測定、不正防止のために識別子、端末情報、操作情報、診断データを各ポリシーに従って処理する場合があります。ClipAuthは通知本文とコードを広告SDKに提供しません。必要な地域ではGoogle UMPで同意を確認します。広告のプライバシー設定が表示される場合、選択を変更できます。Googleのポリシー: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. 任意の支援購入</h2>
+  <p>任意の消費型支援購入はGoogle Play Billingで処理します。決済情報はGoogleが処理し、ClipAuthは商品ID、購入状態、トークンを処理します。カードや口座情報は保存しません。有料機能、会員登録、開発者サーバーはありません。</p>
+  <h2>5. お問い合わせと変更</h2>
+  <p>アプリデータの消去やアンインストールで設定は削除されます。クリップボードや外部サービスのデータはそれぞれの規則に従います。お問い合わせ: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>。処理方法が変わる場合はポリシーを更新します。</p>
+</section>
+
+<!-- 4. 简体中文 (zh-CN) -->
+<section id="zh-CN" lang="zh-CN">
+  <h1>隐私政策</h1>
+  <div class="date-badge">ClipAuth · 2026年10月2日更新</div>
+  <h2>1. 通知访问权限</h2>
+  <p>征得同意后，应用在设备内分析所选应用的通知，识别验证码。通知正文和验证码不会发送到开发者服务器，也不会保存到文件或日志。仅在屏幕亮起且已解锁时复制。系统和厂商限制可能导致无法检测。您可以关闭自动检测，取消所选应用，或在设备设置中撤销通知访问权限。</p>
+  <h2>2. 最近记录与剪贴板</h2>
+  <p>最近的验证码、来源应用包名及复制时间仅保留在进程内存中，最多20条、5分钟。屏幕关闭、监听服务断开或进程结束时清除历史记录。设置和语言保存在设备中，应用数据备份已禁用。清除历史记录或关闭屏幕不会清除系统剪贴板。敏感标记可隐藏受支持的预览，但无法阻止粘贴或键盘等其他应用保存内容。</p>
+  <h2>3. 广告</h2>
+  <p>Google AdMob及广告合作伙伴可能按照各自政策处理标识符、设备信息、交互和诊断数据，以投放及衡量广告并防止欺诈。ClipAuth不会向广告SDK提供通知正文和验证码。需要时会通过Google UMP提供同意选项；广告隐私设置可用时，您可以重新选择。Google政策: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. 可选的支持购买</h2>
+  <p>可选的消耗型支持购买由Google Play Billing处理。Google处理付款资料；ClipAuth处理商品ID、购买状态及令牌，不保存银行卡或账户资料。应用无付费功能、注册账户或开发者服务器。</p>
+  <h2>5. 联系方式与政策变更</h2>
+  <p>清除应用数据或卸载时删除设备设置。剪贴板和第三方数据遵循各自系统与政策。隐私咨询: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>。处理方式变更时更新本政策。</p>
+</section>
+
+<!-- 5. 繁體中文 (zh-TW) -->
+<section id="zh-TW" lang="zh-TW">
+  <h1>隱私權政策</h1>
+  <div class="date-badge">ClipAuth · 2026年10月2日修訂</div>
+  <h2>1. 通知存取權</h2>
+  <p>取得同意後，ClipAuth 會在裝置本機分析您所選應用的通知內容以識別驗證碼。不會將通知原文或驗證碼傳輸至開發者伺服器，亦不會儲存在檔案或日誌中。僅在螢幕亮起且已解鎖時才會進行複製。因 Android 及各裝置製造商政策限制，偵測可能受到限制。您可以關閉自動偵測、取消選取應用，或在裝置設定中撤銷通知存取權限。</p>
+  <h2>2. 最近記錄與剪貼簿</h2>
+  <p>最近複製的驗證碼、來源應用套件名稱及複製時間最多僅在程序記憶體中保留 20 筆，保存 5 分鐘。螢幕關閉、監聽服務斷開連接或程序結束時會立即清除最近記錄。使用者設定與應用語言儲存於本機裝置，應用程式資料備份功能已停用。系統剪貼簿為獨立區域，清除記錄或螢幕關閉不會清除剪貼簿內容。敏感旗標可隱藏受支援系統的畫面預覽，但無法阻止鍵盤或其他應用貼上或儲存內容。</p>
+  <h2>3. 廣告</h2>
+  <p>Google AdMob 及其廣告合作夥伴得依其各自隱私政策處理識別碼、裝置資訊、互動數據與診斷資訊，用於廣告投放、成效衡量與防杜詐欺。ClipAuth 不會將通知原文與驗證碼提供給廣告 SDK。在適用地區，我們會透過 Google UMP 提供同意選項；當廣告隱私設定可用時，您可隨時重新調整選擇。Google 隱私權政策：<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. 自由選購贊助</h2>
+  <p>消耗型贊助項目透過 Google Play Billing 進行交易。付款資料由 Google 處理。ClipAuth 僅處理商品 ID、購買狀態與憑證以完成交易，絕不儲存信用卡或銀行帳戶資訊。本應用無任何付費功能鎖定或會員註冊要求。</p>
+  <h2>5. 聯絡與變更</h2>
+  <p>本應用本身無帳號系統與開發者伺服器。清除應用資料或解除安裝時，本機設定值將一併刪除。剪貼簿與第三方服務資料遵循各自系統與規範。隱私權諮詢：<a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>。處理方式若有變更，將同步更新本政策。</p>
+</section>
+
+<!-- 6. Español (es) -->
+<section id="es" lang="es">
+  <h1>Política de privacidad</h1>
+  <div class="date-badge">ClipAuth · Actualizada el 2 de octubre de 2026</div>
+  <h2>1. Acceso a las notificaciones</h2>
+  <p>Con su consentimiento, ClipAuth analiza el contenido de las notificaciones de las aplicaciones que seleccione en su dispositivo para detectar códigos de verificación. No envía el texto de las notificaciones ni los códigos a servidores externos, ni los guarda en archivos o registros. La copia solo se realiza cuando la pantalla está encendida y desbloqueada. Las restricciones de Android y del fabricante pueden limitar la detección. Puede desactivar la detección automática, deseleccionar aplicaciones o revocar el acceso a las notificaciones en los ajustes del dispositivo.</p>
+  <h2>2. Historial reciente y portapapeles</h2>
+  <p>Los códigos recientes, los nombres de paquete de las aplicaciones y la hora de copia se mantienen únicamente en la memoria del proceso (máximo 20 elementos durante 5 minutos). El historial se elimina al apagar la pantalla, desconectar el servicio o finalizar el proceso. Los ajustes y el idioma de la aplicación se guardan localmente. La copia de seguridad de datos de la aplicación está deshabilitada. El portapapeles del sistema es independiente: borrar el historial o apagar la pantalla no limpia el portapapeles. La etiqueta de contenido sensible oculta la vista previa en sistemas compatibles, pero no impide que el teclado u otras aplicaciones peguen o guarden el contenido.</p>
+  <h2>3. Publicidad</h2>
+  <p>Google AdMob y sus socios publicitarios pueden tratar identificadores, datos del dispositivo, interacciones e información de diagnóstico conforme a sus propias políticas para ofrecer y medir publicidad y prevenir el fraude. ClipAuth no proporciona el texto de las notificaciones ni los códigos de verificación al SDK publicitario. En las regiones donde sea necesario, Google UMP mostrará las opciones de consentimiento; puede volver a modificar sus preferencias en los ajustes cuando esté disponible. Política de privacidad de Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Compras opcionales de apoyo</h2>
+  <p>Las compras consumibles opcionales de apoyo se gestionan mediante Google Play Billing. Google administra la información de pago. ClipAuth procesa los identificadores de producto, el estado de compra y los tokens para completar la transacción, sin almacenar datos bancarios ni de tarjetas. No se requieren cuentas ni funciones de pago.</p>
+  <h2>5. Contacto y modificaciones</h2>
+  <p>Esta aplicación no cuenta con sistema de cuentas ni servidores propios. Al borrar los datos de la aplicación o desinstalarla, se eliminan los ajustes del dispositivo. Los datos del portapapeles y de servicios externos se rigen por sus respectivos sistemas y políticas. Consultas sobre privacidad: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Esta política se actualizará ante cualquier cambio en el tratamiento de datos.</p>
+</section>
+
+<!-- 7. Español - Latinoamérica (es-419) -->
+<section id="es-419" lang="es-419">
+  <h1>Política de privacidad</h1>
+  <div class="date-badge">ClipAuth · Actualizada el 2 de octubre de 2026</div>
+  <h2>1. Acceso a notificaciones</h2>
+  <p>Con su consentimiento, ClipAuth analiza el contenido de las notificaciones de las aplicaciones que seleccione directamente en su dispositivo para reconocer códigos de verificación. No envía el contenido de las notificaciones ni los códigos a ningún servidor del desarrollador, ni los guarda en archivos o registros. La copia solo se realiza cuando la pantalla está encendida y desbloqueada. Ciertas restricciones de Android y del fabricante pueden limitar la detección. Puede apagar la detección automática, deseleccionar aplicaciones o revocar el permiso de acceso a notificaciones en la configuración del dispositivo.</p>
+  <h2>2. Historial reciente y portapapeles</h2>
+  <p>Los códigos recientes, los nombres de paquete de las aplicaciones y la hora de copiado se conservan solo en la memoria del proceso (hasta 20 elementos durante 5 minutos). El historial se borra al apagar la pantalla, al desconectarse el servicio o al cerrarse el proceso. Las configuraciones y el idioma se guardan localmente. El respaldo de datos de la app está desactivado. El portapapeles del sistema es independiente: borrar el historial o apagar la pantalla no limpia el portapapeles. La marca de contenido confidencial oculta la vista previa en sistemas compatibles, pero no evita que teclados u otras apps lo peguen o almacenen.</p>
+  <h2>3. Publicidad</h2>
+  <p>Google AdMob y sus socios comerciales pueden procesar identificadores, información del dispositivo, datos de interacción y de diagnóstico para mostrar anuncios, medir resultados y prevenir fraudes según sus políticas. ClipAuth no suministra el contenido de las notificaciones ni los códigos al SDK publicitario. En las regiones donde sea requerido, Google UMP presenta las opciones de consentimiento; puede reabrir la configuración de privacidad de anuncios en cualquier momento. Política de privacidad de Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Donaciones y compras de apoyo opcionales</h2>
+  <p>Las compras consumibles voluntarias se procesan a través de Google Play Billing. Google administra las credenciales de pago. ClipAuth procesa los ID de producto, estado de compra y tokens para acreditar la compra, sin guardar datos de tarjetas ni cuentas bancarias. No hay funciones de pago bloqueadas ni registro de cuentas.</p>
+  <h2>5. Contacto y modificaciones</h2>
+  <p>La app no tiene servidores de desarrollador ni cuentas de usuario. Al desinstalar la app o borrar sus datos se elimina la configuración local. Los datos del portapapeles y de terceros se rigen por sus propias políticas. Dudas sobre privacidad: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Esta política se actualizará en caso de cambios en el tratamiento.</p>
+</section>
+
+<!-- 8. Deutsch (de) -->
+<section id="de" lang="de">
+  <h1>Datenschutzerklärung</h1>
+  <div class="date-badge">ClipAuth · Aktualisiert am 2. Oktober 2026</div>
+  <h2>1. Benachrichtigungszugriff</h2>
+  <p>Nach Ihrer Einwilligung analysiert ClipAuth Benachrichtigungsinhalte von ausgewählten Apps lokal auf Ihrem Gerät, um Bestätigungscodes zu erkennen. Es werden keine Benachrichtigungsinhalte oder Codes an Entwicklerserver gesendet, in Dateien gespeichert oder in Protokolle geschrieben. Das Kopieren erfolgt nur bei eingeschaltetem und entsperrtem Bildschirm. Einschränkungen durch Android und Gerätehersteller können die Erkennung beeinträchtigen. Sie können die automatische Erkennung deaktivieren, verknüpfte Apps abwählen oder den Benachrichtigungszugriff in den Geräteeinstellungen widerrufen.</p>
+  <h2>2. Verlauf und Zwischenablage</h2>
+  <p>Zuletzt kopierte Codes, Paketnamen der Ursprungs-Apps und Kopierzeitpunkte werden ausschließlich im Prozessspeicher gehalten (maximal 20 Einträge für 5 Minuten). Beim Ausschalten des Bildschirms, Trennen des Listener-Dienstes oder Beenden des Prozesses wird der Verlauf gelöscht. Einstellungen und App-Sprache werden lokal auf dem Gerät gespeichert. Die App-Datensicherung ist deaktiviert. Die Zwischenablage des Systems ist ein separater Bereich: Das Löschen des Verlaufs oder Ausschalten des Bildschirms leert die Zwischenablage nicht. Das Vertraulichkeits-Flag blendet unterstützte Systemvorschauen aus, verhindert jedoch nicht das Einfügen oder Speichern durch Tastaturen oder Dritt-Apps.</p>
+  <h2>3. Werbung</h2>
+  <p>Google AdMob und Werbepartner können Gerätekennungen, Geräteinformationen, Interaktionsdaten und Diagnosedaten zur Bereitstellung, Messung und Betrugsprävention gemäß ihren eigenen Richtlinien verarbeiten. ClipAuth gibt keinerlei Benachrichtigungsinhalte oder Bestätigungscodes an das Werbe-SDK weiter. Sofern gesetzlich erforderlich, stellt Google UMP Einwilligungsauswahlen bereit; Sie können die Werbedatenschutzeinstellungen in der App jederzeit erneut aufrufen. Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Optionale Unterstützerkäufe</h2>
+  <p>Optionale verbrauchbare Unterstützerkäufe werden über Google Play Billing abgewickelt. Google verarbeitet die Zahlungsdaten. ClipAuth verarbeitet Produkt-IDs, Kaufstatus und Kauf-Tokens zum Abschluss der Käufe, speichert jedoch keine Kreditkarten- oder Bankdaten. Es gibt keine kostenpflichtigen Kernfunktionen und keine Benutzerregistrierung.</p>
+  <h2>5. Kontakt und Änderungen</h2>
+  <p>Die App besitzt weder ein eigenes Kontosystem noch Entwicklerserver. Beim Löschen der App-Daten oder Deinstallieren der App werden alle Geräteeinstellungen entfernt. Für Daten in der Zwischenablage oder bei Drittanbietern gelten deren jeweilige Richtlinien. Anfragen zum Datenschutz: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Bei Änderungen an der Datenverarbeitung wird diese Richtlinie aktualisiert.</p>
+</section>
+
+<!-- 9. Français (fr) -->
+<section id="fr" lang="fr">
+  <h1>Politique de confidentialité</h1>
+  <div class="date-badge">ClipAuth · Mise à jour le 2 octobre 2026</div>
+  <h2>1. Accès aux notifications</h2>
+  <p>Après avoir obtenu votre consentement, ClipAuth analyse localement sur votre appareil le contenu des notifications des applications sélectionnées afin de détecter les codes de vérification. Le texte des notifications et les codes ne sont jamais envoyés à un serveur tiers, ni enregistrés dans des fichiers ou des journaux. La copie n'a lieu que si l'écran est allumé et déverrouillé. Les restrictions d'Android et des fabricants peuvent limiter la détection. Vous pouvez désactiver la détection automatique, retirer des applications ou révoquer l'accès aux notifications dans les paramètres de l'appareil.</p>
+  <h2>2. Historique récent et presse-papiers</h2>
+  <p>Les codes récents, les noms de paquets des applications et l'heure de copie sont conservés uniquement dans la mémoire vive du processus (jusqu'à 20 entrées pendant 5 minutes). L'historique est effacé lors de l'extinction de l'écran, de la déconnexion du service ou de l'arrêt du processus. Les préférences et la langue de l'application sont stockées localement. La sauvegarde des données de l'application est désactivée. Le presse-papiers du système est indépendant : effacer l'historique ou éteindre l'écran ne vide pas le presse-papiers. L'indicateur de contenu sensible masque l'aperçu sur les systèmes compatibles, mais n'empêche pas le collage ou la mémorisation par des claviers ou d'autres applications.</p>
+  <h2>3. Publicité</h2>
+  <p>Google AdMob et ses partenaires peuvent traiter des identifiants, des informations sur l'appareil, des interactions et des données de diagnostic conformément à leurs politiques respectives pour diffuser des annonces, mesurer les performances et prévenir les fraudes. ClipAuth ne transmet aucun contenu de notification ni code au SDK publicitaire. Lorsque requis, Google UMP recueille vos choix de consentement ; vous pouvez modifier vos préférences publicitaires à tout moment dans les paramètres si l'option est disponible. Politique de confidentialité de Google : <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Dons et achats de soutien optionnels</h2>
+  <p>Les achats consommables de soutien optionnels sont traités via Google Play Billing. Google gère les informations de paiement. ClipAuth traite les identifiants de produit, l'état d'achat et les jetons pour valider l'opération, sans stocker de coordonnées bancaires. Aucune fonctionnalité payante ni compte utilisateur n'est requis.</p>
+  <h2>5. Contact et modifications</h2>
+  <p>L'application ne dispose d'aucun système de compte utilisateur ni de serveur de développement. La suppression des données de l'application ou sa désinstallation efface tous les paramètres stockés. Les données du presse-papiers et des tiers relèvent de leurs règles respectives. Pour toute question : <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Cette politique sera révisée en cas d'évolution des traitements.</p>
+</section>
+
+<!-- 10. Português - Brasil (pt-BR) -->
+<section id="pt-BR" lang="pt-BR">
+  <h1>Política de Privacidade</h1>
+  <div class="date-badge">ClipAuth · Atualizada em 2 de outubro de 2026</div>
+  <h2>1. Acesso a notificações</h2>
+  <p>Após o seu consentimento, o ClipAuth analisa o conteúdo das notificações dos aplicativos selecionados diretamente no seu dispositivo para identificar códigos de verificação. O texto das notificações e os códigos nunca são enviados a servidores externos, nem salvos em arquivos ou registros. A cópia só ocorre com a tela ligada e desbloqueada. Restrições do Android e de fabricantes podem impedir a detecção. Você pode desativar a detecção automática, desmarcar aplicativos ou revogar o acesso a notificações nas configurações do aparelho.</p>
+  <h2>2. Histórico recente e área de transferência</h2>
+  <p>Os códigos recentes, os nomes de pacote dos apps e os horários de cópia são mantidos apenas na memória do processo (no máximo 20 itens por 5 minutos). O histórico é apagado ao desligar a tela, desconectar o serviço ou encerrar o processo. As configurações e o idioma do app são salvos localmente. O backup de dados do app está desativado. A área de transferência do sistema é independente: limpar o histórico ou apagar a tela não limpa a área de transferência. A sinalização de conteúdo confidencial oculta a prévia em sistemas compatíveis, mas não impede a colagem ou armazenamento por teclados ou outros aplicativos.</p>
+  <h2>3. Publicidade</h2>
+  <p>O Google AdMob e seus parceiros podem tratar identificadores, dados do dispositivo, interações e dados de diagnóstico para veiculação de anúncios, métricas e prevenção de fraudes, conforme suas próprias políticas. O ClipAuth não fornece textos de notificação ou códigos ao SDK de anúncios. Onde exigido, o Google UMP apresenta as opções de consentimento; você pode alterar suas preferências de privacidade de anúncios nas configurações quando disponível. Política de privacidade do Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Compras voluntárias de apoio</h2>
+  <p>As compras consumíveis opcionais de apoio são processadas pelo Google Play Billing. O Google gerencia os dados de pagamento. O ClipAuth processa os IDs dos produtos, status de compra e tokens para concluir a transação, sem armazenar dados bancários ou de cartões. Não há funções pagas bloqueadas nem exigência de cadastro.</p>
+  <h2>5. Contato e alterações</h2>
+  <p>O aplicativo não possui servidores próprios nem sistema de contas. A exclusão de dados do app ou a desinstalação remove todas as configurações locais. Os dados da área de transferência e de serviços de terceiros seguem suas respectivas políticas. Dúvidas sobre privacidade: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Esta política será atualizada caso ocorram mudanças no tratamento de dados.</p>
+</section>
+
+<!-- 11. Italiano (it) -->
+<section id="it" lang="it">
+  <h1>Informativa sulla privacy</h1>
+  <div class="date-badge">ClipAuth · Aggiornata il 2 ottobre 2026</div>
+  <h2>1. Accesso alle notifiche</h2>
+  <p>Previo consenso dell'utente, ClipAuth analizza localmente sul dispositivo il contenuto delle notifiche delle applicazioni selezionate per rilevare i codici di verifica. Non invia il testo delle notifiche né i codici a server esterni, né li memorizza in file o log. La copia avviene esclusivamente a schermo acceso e sbloccato. Restrizioni del sistema Android e dei produttori possono limitare il rilevamento. È possibile disattivare il rilevamento automatico, deselezionare le app o revocare l'accesso alle notifiche nelle impostazioni del dispositivo.</p>
+  <h2>2. Cronologia recente e appunti</h2>
+  <p>I codici recenti, i nomi dei pacchetti delle app e gli orari di copia sono conservati esclusivamente nella memoria volatile del processo (fino a 20 elementi per un massimo di 5 minuti). La cronologia viene cancellata allo spegnimento dello schermo, alla disconnessione del servizio o alla chiusura del processo. Le impostazioni e la lingua dell'app sono memorizzate localmente. Il backup dei dati dell'app è disattivato. Gli appunti di sistema costituiscono un'area separata: la cancellazione della cronologia o lo spegnimento dello schermo non svuota gli appunti. Il contrassegno di sensibilità nasconde le anteprime sui sistemi supportati, ma non impedisce l'incollatura o il salvataggio da parte di tastiere o altre applicazioni.</p>
+  <h2>3. Pubblicità</h2>
+  <p>Google AdMob e i partner pubblicitari possono trattare identificatori, informazioni sul dispositivo, interazioni e dati diagnostici per la pubblicazione, misurazione e prevenzione delle frodi in base alle rispettive informative. ClipAuth non fornisce alcun contenuto delle notifiche o codice di verifica all'SDK pubblicitario. Ove prescritto, Google UMP raccoglie le scelte di consenso; è possibile modificare le opzioni di privacy per gli annunci nelle impostazioni ove disponibile. Informativa sulla privacy di Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Acquisti di supporto opzionali</h2>
+  <p>Gli acquisti consumabili opzionali di supporto sono gestiti tramite Google Play Billing. Google gestisce i dati di pagamento. ClipAuth elabora ID prodotto, stato dell'acquisto e token per completare la transazione, senza memorizzare informazioni su carte o conti bancari. Non sono presenti funzionalità a pagamento né registrazioni utente.</p>
+  <h2>5. Contatti e modifiche</h2>
+  <p>L'applicazione non dispone di server propri né di un sistema di account. La cancellazione dei dati dell'app o la disinstallazione rimuove tutte le preferenze del dispositivo. I dati negli appunti e presso servizi terzi seguono le rispettive norme. Per richieste di informazioni: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. La presente informativa sarà aggiornata in caso di modifiche al trattamento.</p>
+</section>
+
+<!-- 12. Nederlands (nl) -->
+<section id="nl" lang="nl">
+  <h1>Privacybeleid</h1>
+  <div class="date-badge">ClipAuth · Bijgewerkt op 2 oktober 2026</div>
+  <h2>1. Meldingstoegang</h2>
+  <p>Na uw toestemming analyseert ClipAuth de inhoud van meldingen van door u geselecteerde apps lokaal op uw apparaat om verificatiecodes te herkennen. Meldingsteksten en codes worden nooit verzonden naar externe servers, noch opgeslagen in bestanden of logboeken. Kopiëren gebeurt alleen wanneer het scherm is ingeschakeld en ontgrendeld. Beperkingen van Android of fabrikanten kunnen de herkenning beïnvloeden. U kunt de automatische detectie uitschakelen, apps ontkoppelen of meldingstoegang intrekken via de apparaatinstellingen.</p>
+  <h2>2. Recente geschiedenis en klembord</h2>
+  <p>Recente codes, pakketnamen van apps en kopieertijdstippen worden uitsluitend bewaard in het procesgeheugen (maximaal 20 vermeldingen gedurende 5 minuten). De geschiedenis wordt gewist bij schermvergrendeling/uitschakeling, verbreking van de servicedienst of beëindiging van het proces. App-instellingen en taalkeuze worden lokaal opgeslagen. Automatische app-back-up is uitgeschakeld. Het klembord van het systeem is een afzonderlijk onderdeel: het wissen van de geschiedenis of uitschakelen van het scherm leegt het klembord niet. De markering voor gevoelige inhoud verbergt ondersteunde systeemvoorbeelden, maar verhindert niet dat toetsenborden of andere apps de inhoud plakken of bewaren.</p>
+  <h2>3. Advertenties</h2>
+  <p>Google AdMob en advertentiepartners kunnen id's, apparaatgegevens, interacties en diagnostische gegevens verwerken voor advertentieweergave, meting en fraudepreventie volgens hun respectieve beleid. ClipAuth verstrekt geen meldingsinhoud of verificatiecodes aan de advertentie-SDK. Waar vereist toont Google UMP toestemmingskeuzes; u kunt de privacyopties voor advertenties op elk moment opnieuw aanpassen via de instellingen. Privacybeleid van Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Optionele ondersteuningsaankopen</h2>
+  <p>Optionele verbruiksartikelen ter ondersteuning worden afgehandeld via Google Play Billing. Google verwerkt de betaalgegevens. ClipAuth verwerkt product-ID's, aankoopstatus en tokens om transacties te voltooien en slaat geen bank- of kaartgegevens op. Er zijn geen betaalde functies of accounts vereist.</p>
+  <h2>5. Contact en wijzigingen</h2>
+  <p>Deze app heeft geen ontwikkelaarsaccount-systeem of eigen server. Bij het verwijderen van app-gegevens of het de-installeren van de app worden lokale instellingen gewist. Gegevens op het klembord en bij externe diensten vallen onder hun respectieve beleid. Vragen over privacy: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Dit beleid wordt bijgewerkt wanneer de verwerking verandert.</p>
+</section>
+
+<!-- 13. Polski (pl) -->
+<section id="pl" lang="pl">
+  <h1>Polityka prywatności</h1>
+  <div class="date-badge">ClipAuth · Zaktualizowano 2 października 2026 r.</div>
+  <h2>1. Dostęp do powiadomień</h2>
+  <p>Po uzyskaniu zgody użytkownika aplikacja ClipAuth analizuje treść powiadomień z wybranych aplikacji lokalnie na urządzeniu w celu wykrywania kodów weryfikacyjnych. Treści powiadomień ani kody nie są wysyłane na serwery dewelopera, zapisywane w plikach ani rejestrowane w dziennikach. Kopiowanie następuje wyłącznie przy włączonym i odblokowanym ekranie. Ograniczenia systemu Android oraz producentów urządzeń mogą uniemożliwić wykrywanie. Możesz wyłączyć automatyczne wykrywanie, odznaczyć wybrane aplikacje lub cofnąć uprawnienie dostępu do powiadomień w ustawieniach urządzenia.</p>
+  <h2>2. Ostatnia historia i schowek</h2>
+  <p>Ostatnie kody, nazwy pakietów aplikacji źródłowych oraz czasy skopiowania są przechowywane wyłącznie w pamięci operacyjnej procesu (maksymalnie 20 pozycji przez 5 minut). Historia jest usuwana po wyłączeniu ekranu, odłączeniu usługi lub zakończeniu procesu. Ustawienia i język aplikacji są zapisywane lokalnie. Kopia zapasowa danych aplikacji jest wyłączona. Schowek systemowy jest osobnym obszarem: wyczyszczenie historii lub wygaszenie ekranu nie czyści schowka. Flaga poufności ukrywa podgląd w obsługiwanych wersjach systemu, lecz nie blokuje wklejania ani zapisywania przez klawiatury lub inne aplikacje.</p>
+  <h2>3. Reklamy</h2>
+  <p>Google AdMob i partnerzy reklamowi mogą przetwarzać identyfikatory, dane urządzenia, informacje o interakcjach i dane diagnostyczne w celu wyświetlania reklam, analityki oraz zapobiegania oszustwom zgodnie ze swoimi zasadami. ClipAuth nie przekazuje treści powiadomień ani kodów do pakietu SDK reklam. W wymaganych regionach formularz Google UMP umożliwia wybór zgód; preferencje prywatności reklam można w każdej chwili zmienić w ustawieniach. Polityka prywatności Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Opcjonalne zakupy wspierające</h2>
+  <p>Opcjonalne zakupy wspierające (produkty jednorazowe) są obsługiwane przez Google Play Billing. Google przetwarza dane płatności. ClipAuth przetwarza identyfikatory produktów, stan zakupu i tokeny w celu sfinalizowania transakcji, nie przechowując danych kart ani kont bankowych. Aplikacja nie wymaga konta użytkownika ani płatnych funkcji.</p>
+  <h2>5. Kontakt i zmiany</h2>
+  <p>Aplikacja nie posiada własnego systemu kont ani serwerów dewelopera. Usunięcie danych aplikacji lub jej odinstalowanie kasuje ustawienia urządzenia. Dane ze schowka oraz usług zewnętrznych podlegają odpowiednim regulaminom tych systemów. Zapytania dotyczące prywatności: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. W przypadku zmiany sposobu przetwarzania niniejsza polityka zostanie zaktualizowana.</p>
+</section>
+
+<!-- 14. Русский (ru) -->
+<section id="ru" lang="ru">
+  <h1>Политика конфиденциальности</h1>
+  <div class="date-badge">ClipAuth · Обновлено 2 октября 2026 г.</div>
+  <h2>1. Доступ к уведомлениям</h2>
+  <p>После получения согласия пользователя ClipAuth анализирует содержимое уведомлений выбранных приложений локально на устройстве для распознавания кодов подтверждения. Текст уведомлений и коды не передаются на сервер разработчика, не сохраняются в файлах и не записываются в журналы. Копирование выполняется только при включенном и разблокированном экране. Ограничения Android и производителей устройств могут препятствовать обнаружению. Вы можете отключить автоматическое обнаружение, отменить выбор приложений или отозвать доступ к уведомлениям в настройках устройства.</p>
+  <h2>2. История и буфер обмена</h2>
+  <p>Недавние коды, имена пакетов приложений и время копирования хранятся исключительно в оперативной памяти процесса (до 20 записей в течение 5 минут). История удаляется при выключении экрана, отключении службы или завершении процесса. Настройки и язык приложения сохраняются локально. Резервное копирование данных приложения отключено. Буфер обмена системы является независимой областью: очистка истории или выключение экрана не очищают буфер обмена. Флаг конфиденциальности скрывает системный предпросмотр на поддерживаемых версиях, но не блокирует вставку или сохранение клавиатурами и другими приложениями.</p>
+  <h2>3. Реклама</h2>
+  <p>Google AdMob и рекламные партнеры могут обрабатывать идентификаторы, данные об устройстве, взаимодействия и диагностические данные для показа рекламы, измерений и предотвращения мошенничества в соответствии со своими политиками. ClipAuth не передает текст уведомлений или коды в рекламный SDK. В необходимых регионах Google UMP предоставляет выбор согласия; вы можете в любое время изменить параметры конфиденциальности рекламы в настройках. Политика конфиденциальности Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Добровольная поддержка (покупки)</h2>
+  <p>Необязательные расходуемые покупки поддержки обрабатываются через Google Play Billing. Google управляет платежными данными. ClipAuth обрабатывает идентификаторы продуктов, статус покупки и токены для завершения транзакции, не сохраняя данные карт или счетов. Платных функций или обязательной регистрации нет.</p>
+  <h2>5. Контакты и изменения</h2>
+  <p>В приложении нет системы учетных записей или серверов разработчика. При очистке данных или удалении приложения все локальные настройки удаляются. Данные в буфере обмена и у сторонних служб регулируются их правилами. Вопросы конфиденциальности: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Политика обновляется при изменении способов обработки.</p>
+</section>
+
+<!-- 15. Українська (uk) -->
+<section id="uk" lang="uk">
+  <h1>Політика конфіденційності</h1>
+  <div class="date-badge">ClipAuth · Оновлено 2 жовтня 2026 р.</div>
+  <h2>1. Доступ до сповіщень</h2>
+  <p>Після отримання згоди ClipAuth аналізує вміст сповіщень вибраних додатків безпосередньо на пристрої для виявлення кодів підтвердження. Текст сповіщень та коди не надсилаються на сервери розробника, не зберігаються у файлах чи журналах. Копіювання здійснюється лише тоді, коли екран увімкнено та розблоковано. Обмеження системи Android та виробників можуть перешкоджати виявленню. Ви можете вимкнути автовиявлення, скасувати вибір додатків або відкликати доступ до сповіщень у налаштуваннях пристрою.</p>
+  <h2>2. Нещодавня історія та буфер обміну</h2>
+  <p>Останні коди, назви пакетів додатків та час копіювання зберігаються виключно в пам'яті процесу (до 20 записів протягом 5 хвилин). Історія видаляється під час вимкнення екрана, від'єднання служби або завершення процесу. Налаштування та мова додатку зберігаються локально. Резервне копіювання даних додатку вимкнено. Буфер обміну системи є окремою областю: очищення історії або вимкнення екрана не очищає буфер обміну. Прапорець конфіденційності приховує системний попередній перегляд на сумісних пристроях, але не блокує вставлення чи збереження клавіатурами або іншими додатками.</p>
+  <h2>3. Реклама</h2>
+  <p>Google AdMob та рекламні партнери можуть обробляти ідентифікатори, відомості про пристрій, дані взаємодії та діагностики для показу реклами, аналітики та запобігання шахрайству згідно зі своїми політиками. ClipAuth не передає вміст сповіщень або коди рекламному SDK. За потреби Google UMP надає форму вибору згоди; ви можете будь-коли змінити параметри конфіденційності реклами в налаштуваннях. Політика конфіденційності Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Добровільна підтримка (покупки)</h2>
+  <p>Необов'язкові витратні покупки для підтримки обробляються через Google Play Billing. Google обробляє платіжні реквізити. ClipAuth обробляє ідентифікатори товарів, статус покупки та токени для завершення замовлення, не зберігаючи банківські дані чи картки. Платних функцій або обов'язкової реєстрації немає.</p>
+  <h2>5. Контакти та зміни</h2>
+  <p>У додатку немає системи облікових записів або власних серверів. Видалення даних або деінсталяція додатку видаляє всі локальні налаштування. Дані в буфері обміну та зовнішніх службах регулюються їхніми правилами. Запити щодо конфіденційності: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Політика оновлюється в разі зміни способів обробки.</p>
+</section>
+
+<!-- 16. Türkçe (tr) -->
+<section id="tr" lang="tr">
+  <h1>Gizlilik Politikası</h1>
+  <div class="date-badge">ClipAuth · 2 Ekim 2026 tarihinde güncellendi</div>
+  <h2>1. Bildirim Erişimi</h2>
+  <p>ClipAuth, onayınızın ardından doğrulama kodlarını tespit etmek için seçtiğiniz uygulamaların bildirim içeriklerini cihazınızda yerel olarak inceler. Bildirim metinlerini ve kodları geliştirici sunucusuna göndermez, dosyalara veya günlüklere kaydetmez. Kopyalama işlemi yalnızca ekran açık ve kilit açılmış durumdayken gerçekleşir. Android ve üretici kısıtlamaları algılamayı engelleyebilir. Otomatik algılamayı kapatabilir, uygulamaların seçimini kaldırabilir veya cihaz ayarlarından Bildirim Erişimi iznini iptal edebilirsiniz.</p>
+  <h2>2. Son Geçmiş ve Pano</h2>
+  <p>Son kodlar, kaynak uygulama paket adları ve kopyalama zamanları yalnızca işlem belleğinde tutulur (en fazla 20 kayıt, 5 dakika boyunca). Ekran kapandığında, dinleyici bağlantısı kesildiğinde veya işlem sonlandığında geçmiş silinir. Ayarlar ve uygulama dili cihazda yerel olarak saklanır. Uygulama verisi yedeklemesi devre dışıdır. Sistem panosu ayrı bir alandır: geçmişin silinmesi veya ekranın kapanması panoyu temizlemez. Hassas içerik işareti desteklenen sistemlerde önizlemeyi gizler; ancak klavyeler veya diğer uygulamalar tarafından yapıştırılmasını ya da saklanmasını engellemez.</p>
+  <h2>3. Reklamlar</h2>
+  <p>Google AdMob ve reklam ortakları, reklam sunumu, ölçüm ve dolandırıcılığı önleme amacıyla kendi politikaları doğrultusunda tanımlayıcıları, cihaz bilgilerini, etkileşim ve tanılama verilerini işleyebilir. ClipAuth, bildirim içeriklerini ve doğrulama kodlarını reklam SDK'sına iletmez. Gereken bölgelerde Google UMP üzerinden onay seçenekleri sunulur; reklam gizliliği tercihlerini ayarlardan dilediğiniz zaman yeniden düzenleyebilirsiniz. Google gizlilik politikası: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. İsteğe Bağlı Destek Satın Alımları</h2>
+  <p>İsteğe bağlı tüketilebilir destek satın alımları Google Play Billing aracılığıyla gerçekleştirilir. Ödeme bilgilerini Google işler. ClipAuth satın alma işlemini tamamlamak için ürün kimliklerini, satın alma durumunu ve belirteçleri işler; kart veya banka bilgilerini kaydetmez. Ücretli kilitli özellikler veya üyelik zorunluluğu yoktur.</p>
+  <h2>5. İletişim ve Değişiklikler</h2>
+  <p>Bu uygulamanın bir hesap sistemi veya geliştirici sunucusu bulunmamaktadır. Uygulama verileri silindiğinde veya uygulama kaldırıldığında cihaz ayarları silinir. Pano ve üçüncü taraf hizmetlerindeki veriler kendi kurallarına tabidir. Gizlilikle ilgili sorularınız için: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Veri işleme biçimi değiştiğinde bu politika güncellenecektir.</p>
+</section>
+
+<!-- 17. Tiếng Việt (vi) -->
+<section id="vi" lang="vi">
+  <h1>Chính sách quyền riêng tư</h1>
+  <div class="date-badge">ClipAuth · Cập nhật ngày 2 tháng 10 năm 2026</div>
+  <h2>1. Quyền truy cập thông báo</h2>
+  <p>Sau khi bạn đồng ý, ClipAuth sẽ phân tích nội dung thông báo từ các ứng dụng được chọn ngay trên thiết bị để nhận diện mã xác thực. Ứng dụng không gửi nội dung thông báo hay mã xác thực đến máy chủ nhà phát triển, không lưu vào tệp hoặc nhật ký. Thao tác sao chép chỉ diễn ra khi màn hình đang bật và đã mở khóa. Các hạn chế từ Android và nhà sản xuất có thể ảnh hưởng đến khả năng phát hiện. Bạn có thể tắt tính năng tự động nhận diện, bỏ chọn ứng dụng hoặc thu hồi quyền truy cập thông báo trong cài đặt thiết bị.</p>
+  <h2>2. Lịch sử gần đây và bộ nhớ tạm</h2>
+  <p>Các mã gần đây, tên gói ứng dụng nguồn và thời gian sao chép chỉ được lưu tạm trong bộ nhớ tiến trình (tối đa 20 mục trong 5 phút). Lịch sử sẽ bị xóa khi tắt màn hình, ngắt kết nối dịch vụ lắng nghe hoặc kết thúc tiến trình. Cài đặt và ngôn ngữ ứng dụng được lưu cục bộ trên máy. Tính năng sao lưu dữ liệu ứng dụng đã được tắt. Bộ nhớ tạm (clipboard) hệ thống là khu vực tách biệt: việc xóa lịch sử hay tắt màn hình không xóa bộ nhớ tạm. Cờ bảo mật nội dung nhạy cảm giúp ẩn bản xem trước trên hệ thống hỗ trợ, nhưng không ngăn cản bàn phím hoặc ứng dụng khác dán hoặc lưu trữ nội dung.</p>
+  <h2>3. Quảng cáo</h2>
+  <p>Google AdMob và các đối tác quảng cáo có thể xử lý mã nhận dạng, thông tin thiết bị, tương tác và dữ liệu chẩn đoán để phân phối, đo lường quảng cáo và ngăn ngừa gian lận theo chính sách của họ. ClipAuth không cung cấp nội dung thông báo hay mã xác thực cho SDK quảng cáo. Tại các khu vực được yêu cầu, Google UMP sẽ hiển thị các tùy chọn đồng ý; bạn có thể mở lại cài đặt quyền riêng tư quảng cáo bất cứ lúc nào nếu có sẵn. Chính sách quyền riêng tư của Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Mua ủng hộ tùy chọn</h2>
+  <p>Các gói ủng hộ tiêu dùng tùy chọn được xử lý qua Google Play Billing. Google xử lý thông tin thanh toán. ClipAuth xử lý ID sản phẩm, trạng thái mua hàng và mã xác thực giao dịch để hoàn tất đơn hàng, không lưu thông tin thẻ hay tài khoản ngân hàng. Ứng dụng không có tính năng trả phí hay yêu cầu đăng ký tài khoản.</p>
+  <h2>5. Liên hệ và thay đổi</h2>
+  <p>Ứng dụng không có hệ thống tài khoản người dùng hay máy chủ riêng. Khi xóa dữ liệu ứng dụng hoặc gỡ cài đặt, các cài đặt trên máy sẽ bị xóa. Dữ liệu trong bộ nhớ tạm và các dịch vụ bên thứ ba tuân theo các chính sách tương ứng. Mọi thắc mắc về quyền riêng tư xin gửi về: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Chính sách này sẽ được cập nhật khi có thay đổi trong quy trình xử lý.</p>
+</section>
+
+<!-- 18. Bahasa Indonesia (id) -->
+<section id="id" lang="id">
+  <h1>Kebijakan Privasi</h1>
+  <div class="date-badge">ClipAuth · Diperbarui 2 Oktober 2026</div>
+  <h2>1. Akses Notifikasi</h2>
+  <p>Setelah persetujuan Anda, ClipAuth menganalisis isi notifikasi dari aplikasi yang Anda pilih secara lokal di perangkat untuk mendeteksi kode verifikasi. Aplikasi tidak mengirimkan teks notifikasi atau kode ke server pengembang, serta tidak menyimpannya dalam berkas atau log. Penyalinan hanya dilakukan saat layar menyala dan tidak terkunci. Pembatasan sistem Android dan produsen perangkat dapat membatasi deteksi. Anda dapat menonaktifkan deteksi otomatis, membatalkan pilihan aplikasi, atau mencabut izin Akses Notifikasi di pengaturan perangkat.</p>
+  <h2>2. Riwayat Terakhir dan Papan Klip</h2>
+  <p>Kode terbaru, nama paket aplikasi sumber, dan waktu penyalinan hanya disimpan dalam memori proses (maksimal 20 entri selama 5 menit). Riwayat akan dihapus saat layar mati, pemutus sambungan layanan, atau proses berhenti. Pengaturan dan bahasa aplikasi disimpan secara lokal. Pencadangan data aplikasi dinonaktifkan. Papan klip (clipboard) sistem adalah area terpisah: menghapus riwayat atau mematikan layar tidak mengosongkan papan klip. Tanda konten sensitif menyembunyikan pratinjau pada sistem yang didukung, namun tidak mencegah penempelan atau penyimpanan oleh papan ketik atau aplikasi lain.</p>
+  <h2>3. Iklan</h2>
+  <p>Google AdMob dan mitra iklan dapat memproses pengidentifikasi, informasi perangkat, data interaksi, dan diagnostik untuk penayangan iklan, pengukuran, dan pencegahan penipuan sesuai kebijakan mereka. ClipAuth tidak menyediakan teks notifikasi atau kode verifikasi ke SDK iklan. Di wilayah yang mewajibkan, Google UMP menampilkan pilihan persetujuan; Anda dapat membuka kembali opsi privasi iklan di pengaturan jika tersedia. Kebijakan Privasi Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Pembelian Dukungan Sukarela</h2>
+  <p>Pembelian dukungan sukarela (barang habis pakai) diproses melalui Google Play Billing. Google mengelola informasi pembayaran. ClipAuth memproses ID produk, status pembelian, dan token untuk menyelesaikan transaksi, tanpa menyimpan detail kartu atau rekening bank. Tidak ada fitur berbayar khusus maupun pendaftaran akun.</p>
+  <h2>5. Kontak dan Pembaruan</h2>
+  <p>Aplikasi ini tidak memiliki sistem akun pengguna atau server pengembang. Menghapus data aplikasi atau mencopot pemasangan aplikasi akan menghapus setelan lokal. Data pada papan klip dan layanan pihak ketiga mengikuti kebijakan masing-masing. Pertanyaan privasi: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Kebijakan ini akan diperbarui jika ada perubahan dalam pemrosesan data.</p>
+</section>
+
+<!-- 19. ไทย (th) -->
+<section id="th" lang="th">
+  <h1>นโยบายความเป็นส่วนตัว</h1>
+  <div class="date-badge">ClipAuth · ปรับปรุงเมื่อ 2 ตุลาคม 2026</div>
+  <h2>1. การเข้าถึงการแจ้งเตือน</h2>
+  <p>หลังจากได้รับความยินยอมจากคุณ ClipAuth จะวิเคราะห์เนื้อหาการแจ้งเตือนจากแอปพลิเคชันที่คุณเลือกภายในอุปกรณ์เพื่อตรวจหารหัสยืนยัน โดยไม่มีการส่งข้อความแจ้งเตือนหรือรหัสยืนยันไปยังเซิร์ฟเวอร์ของนักพัฒนา และไม่บันทึกลงในไฟล์หรือบันทึกประวัติ การคัดลอกจะทำงานเมื่อหน้าจอเปิดและปลดล็อกอยู่เท่านั้น ข้อจำกัดของระบบ Android และผู้ผลิตอุปกรณ์อาจทำให้การตรวจหาไม่สามารถทำงานได้ คุณสามารถปิดการตรวจหาอัตโนมัติ ยกเลิกการเลือกแอป หรือเพิกถอนสิทธิ์การเข้าถึงการแจ้งเตือนได้ในการตั้งค่าอุปกรณ์</p>
+  <h2>2. ประวัติล่าสุดและคลิปบอร์ด</h2>
+  <p>รหัสล่าสุด ชื่อแพ็กเกจแอป และเวลาที่คัดลอกจะถูกจัดเก็บไว้ในหน่วยความจำของกระบวนการเท่านั้น (สูงสุด 20 รายการ นาน 5 นาที) ประวัติจะถูกลบเมื่อปิดหน้าจอ ตัดการเชื่อมต่อบริการ หรือกระบวนการสิ้นสุดลง การตั้งค่าและภาษาของแอปจะถูกบันทึกไว้ในอุปกรณ์ การสำรองข้อมูลแอปถูกปิดใช้งาน คลิปบอร์ดของระบบเป็นส่วนที่แยกต่างหาก การล้างประวัติหรือปิดหน้าจอจะไม่ล้างคลิปบอร์ด การกำหนดสถานะข้อมูลละเอียดอ่อนจะซ่อนการแสดงตัวอย่างบนระบบที่รองรับ แต่ไม่สามารถป้องกันการวางหรือจัดเก็บโดยแป้นพิมพ์หรือแอปอื่นได้</p>
+  <h2>3. โฆษณา</h2>
+  <p>Google AdMob และพันธมิตรโฆษณาอาจประมวลผลตัวระบุ ข้อมูลอุปกรณ์ การโต้ตอบ และข้อมูลการวินิจฉัยเพื่อแสดงโฆษณา การวัดผล และป้องกันการฉ้อโกงตามนโยบายของตน ClipAuth จะไม่ส่งเนื้อหาการแจ้งเตือนหรือรหัสยืนยันให้แก่ SDK โฆษณา ในภูมิภาคที่กำหนด Google UMP จะแสดงตัวเลือกความยินยอม โดยคุณสามารถเปิดการตั้งค่าความเป็นส่วนตัวของโฆษณาอีกครั้งได้ นโยบายความเป็นส่วนตัวของ Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. การสนับสนุนตามความสมัครใจ</h2>
+  <p>การสั่งซื้อการสนับสนุนแบบใช้หมดไปเป็นไปตามความสมัครใจและดำเนินการผ่าน Google Play Billing โดย Google เป็นผู้จัดการข้อมูลการชำระเงิน ClipAuth ประมวลผลรหัสสินค้า สถานะการซื้อ และโทเคนเพื่อดำเนินการสั่งซื้อให้เสร็จสิ้น โดยไม่มีการจัดเก็บข้อมูลบัตรหรือบัญชีธนาคาร ไม่มีการจำกัดฟังก์ชันที่ต้องจ่ายเงินและไม่ต้องลงทะเบียนบัญชี</p>
+  <h2>5. การติดต่อและการเปลี่ยนแปลง</h2>
+  <p>แอปพลิเคชันนี้ไม่มีระบบบัญชีผู้ใช้หรือเซิร์ฟเวอร์ของนักพัฒนา เมื่อลบข้อมูลแอปหรือถอนการติดตั้งแอป การตั้งค่าบนอุปกรณ์จะถูกลบออก ข้อมูลในคลิปบอร์ดและบริการภายนอกจะเป็นไปตามข้อกำหนดของระบบนั้นๆ ติดต่อสอบถามเกี่ยวกับความเป็นส่วนตัว: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a> นโยบายนี้จะได้รับการปรับปรุงหากมีการเปลี่ยนแปลงแนวทางการประมวลผล</p>
+</section>
+
+<!-- 20. العربية (ar - RTL) -->
+<section id="ar" lang="ar" dir="rtl">
+  <h1>سياسة الخصوصية</h1>
+  <div class="date-badge">ClipAuth · تم التحديث في 2 أكتوبر 2026</div>
+  <h2>1. الوصول إلى الإشعارات</h2>
+  <p>بعد الحصول على موافقتك، يقوم ClipAuth بتحليل محتوى الإشعارات من التطبيقات التي تحددها محلياً على جهازك للتعرف على رموز التحقق. لا يرسل التطبيق نصوص الإشعارات أو الرموز إلى خوادم المطور، ولا يحفظها في ملفات أو سجلات. تتم عملية النسخ فقط عندما تكون الشاشة مضاءة وغير مقفلة. قد تؤدي قيود نظام Android أو الشركات المصنعة إلى تقييد الاكتشاف. يمكنك إيقاف الاكتشاف التلقائي، أو إلغاء تحديد التطبيقات، أو إلغاء إذن الوصول إلى الإشعارات من إعدادات الجهاز.</p>
+  <h2>2. السجل الأخير والحافظة</h2>
+  <p>يتم الاحتفاظ بالرموز الأخيرة وأسماء حزم التطبيقات المصدر ووقت النسخ في ذاكرة المعالجة المؤقتة فقط (بحد أقصى 20 إدخالاً ولمدة 5 دقائق). يتم مسح السجل عند إيقاف تشغيل الشاشة، أو فصل خدمة الاستماع، أو إنهاء المعالجة. يتم حفظ الإعدادات ولغة التطبيق محلياً على الجهاز، كما تم تعطيل النسخ الاحتياطي لبيانات التطبيق. حافظة النظام هي منطقة مستقلة تماماً؛ مسح السجل أو إغلاق الشاشة لا يؤدي إلى مسح الحافظة. تعمل علامة البيانات الحساسة على إخفاء المعاينة في الأنظمة المدعومة، ولكنها لا تمنع اللصق أو الحفظ بواسطة لوحات المفاتيح أو التطبيقات الأخرى.</p>
+  <h2>3. الإعلانات</h2>
+  <p>يجوز لشركة Google AdMob وشركاء الإعلانات معالجة المعرّفات ومعلومات الجهاز والتفاعلات وبيانات التشخيص لعرض الإعلانات والقياس ومنع الاحتيال وفقاً لسياساتهم الخاصة. لا يقدم ClipAuth أي نصوص إشعارات أو رموز تحقق إلى حزمة SDK الإعلانية. في المناطق التي تتطلب ذلك، يوفر Google UMP خيارات الموافقة؛ يمكنك إعادة فتح خيارات خصوصية الإعلانات من الإعدادات متى كانت متاحة. سياسة خصوصية Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. عمليات الدعم الاختيارية</h2>
+  <p>تتم معالجة عمليات الشراء الاستهلاكية الاختيارية لدعم التطبيق عبر Google Play Billing. تتولى Google معالجة معلومات الدفع. يعالج ClipAuth معرّفات المنتجات وحالة الشراء والرموز المميزة لإتمام العملية، ولا يخزن أي بيانات للبطاقات أو الحسابات المصرفية. لا توجد ميزات مدفوعة مقفلة أو تسجيل حسابات.</p>
+  <h2>5. التواصل والتعديلات</h2>
+  <p>لا يحتوي التطبيق على نظام حسابات أو خوادم تابعة للمطور. يؤدي مسح بيانات التطبيق أو إلغاء تثبيته إلى حذف الإعدادات المحفوظة على الجهاز. تخضع البيانات الموجودة في الحافظة ولدى الخدمات الخارجية للسياسات والأنظمة الخاصة بها. للاستفسارات المتعلقة بالخصوصية: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. سيتم تحديث هذه السياسة إذا طرأت أي تغييرات على طريقة المعالجة.</p>
+</section>
+
+<!-- 21. עברית (he - RTL) -->
+<section id="he" lang="he" dir="rtl">
+  <h1>מדיניות פרטיות</h1>
+  <div class="date-badge">ClipAuth · עודכן ב-2 באוקטובר 2026</div>
+  <h2>1. גישה להודעות</h2>
+  <p>לאחר קבלת הסכמתך, ClipAuth מנתח את תוכן ההתראות מהאפליקציות שבחרת באופן מקומי במכשירך לצורך זיהוי קודי אימות. האפליקציה אינה שולחת תוכן התראות או קודים לשרתי מפתח, ואינה שומרת אותם בקבצים או ביומנים. ההעתקה מתבצעת רק כאשר המסך דולק ואינו נעול. מגבלות של Android ושל יצרני המכשירים עשויות למנוע זיהוי. ניתן להשבית את הזיהוי האוטומטי, לבטל בחירת אפליקציות או לבטל את הרשאת הגישה להתראות בהגדרות המכשיר.</p>
+  <h2>2. היסטוריה אחרונה ולוח גזירים</h2>
+  <p>קודים אחרונים, שמות חבילות של אפליקציות המקור וזמני העתקה נשמרים בזיכרון התהליך בלבד (עד 20 רשומות למשך 5 דקות). ההיסטוריה נמחקת בעת כיבוי המסך, ניתוק השירות או סיום התהליך. הגדרות ושפת האפליקציה נשמרות מקומית. גיבוי נתוני האפליקציה מושבת. לוח הגזירים (Clipboard) של המערכת הינו אזור נפרד: ניקוי ההיסטוריה או כיבוי המסך אינם מנקים את לוח הגזירים. סימון תוכן רגיש מסתיר תצוגה מקדימה במערכות תומכות, אך אינו מונע הדבקה או שמירה על ידי מקלדות או אפליקציות אחרות.</p>
+  <h2>3. פרסום</h2>
+  <p>Google AdMob ושותפי פרסום עשויים לעבד מזהים, פרטי מכשיר, אינטראקציות ונתוני אבחון לצורך הצגת מודעות, מדידה ומניעת הונאות בהתאם למדיניותם. ClipAuth אינו מעביר תוכן התראות או קודי אימות ל-SDK הפרסומי. באזורים הנדרשים, מערכת Google UMP מציגה אפשרויות הסכמה; ניתן לפתוח מחדש את אפשרויות פרטיות המודעות מההגדרות בכל עת. מדיניות הפרטיות של Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. רכישות תמיכה אופציונליות</h2>
+  <p>רכישות תמיכה מתכלות ואופציונליות מנוהלות באמצעות Google Play Billing. חברת Google מעבדת את פרטי התשלום. ClipAuth מעבד מזהי מוצר, סטטוס רכישה ואסימונים לצורך השלמת העסקה, ואינו שומר פרטי כרטיסי אשראי או חשבונות בנק. אין באפליקציה תכונות בתשלום או חובת הרשמה.</p>
+  <h2>5. יצירת קשר ושינויים</h2>
+  <p>לאפליקציה אין מערכת חשבונות משתמש או שרת מפתח. מחיקת נתוני האפליקציה או הסרתה מוחקת את כל ההגדרות מהמכשיר. נתונים בלוח הגזירים ובשירותי צד שלישי כפופים למדיניות שלהם. פניות בנושאי פרטיות: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. מדיניות זו תעודכן בכל שינוי באופן עיבוד הנתונים.</p>
+</section>
+
+<!-- 22. हिन्दी (hi) -->
+<section id="hi" lang="hi">
+  <h1>गोपनीयता नीति</h1>
+  <div class="date-badge">ClipAuth · 2 अक्टूबर 2026 को अद्यतन</div>
+  <h2>1. सूचना (Notification) एक्सेस</h2>
+  <p>आपकी सहमति के बाद, ClipAuth सत्यापन कोड (OTP) पहचानने के लिए आपके डिवाइस पर ही चुनिंदा ऐप्स की सूचना सामग्री का विश्लेषण करता है। यह सूचना सामग्री या कोड को किसी डेवलपर सर्वर पर नहीं भेजता, न ही उन्हें फ़ाइलों या लॉग में सहेजता है। प्रतिलिपि (कॉपी) केवल तभी की जाती है जब स्क्रीन चालू और अनलॉक हो। Android और डिवाइस निर्माताओं के प्रतिबंधों के कारण पहचान सीमित हो सकती है। आप ऑटो-डिटेक्शन बंद कर सकते हैं, ऐप्स का चयन हटा सकते हैं, या डिवाइस सेटिंग्स में जाकर सूचना एक्सेस अनुमति वापस ले सकते हैं।</p>
+  <h2>2. हालिया इतिहास और क्लिपबोर्ड</h2>
+  <p>हाल के कोड, स्रोत ऐप पैकेज नाम और कॉपी करने का समय केवल प्रक्रिया मेमोरी में रखा जाता है (अधिकतम 20 प्रविष्टियाँ, 5 मिनट के लिए)। स्क्रीन बंद होने, सेवा डिस्कनेक्ट होने या प्रक्रिया समाप्त होने पर इतिहास हटा दिया जाता है। ऐप सेटिंग्स और भाषा स्थानीय रूप से सहेजी जाती हैं। ऐप डेटा बैकअप अक्षम है। सिस्टम क्लिपबोर्ड एक अलग क्षेत्र है: इतिहास साफ़ करने या स्क्रीन बंद करने से क्लिपबोर्ड साफ़ नहीं होता है। संवेदनशील फ़्लैग समर्थित सिस्टम पर पूर्वावलोकन छुपाता है, लेकिन कीबोर्ड या अन्य ऐप्स द्वारा पेस्ट या सहेजने को पूरी तरह नहीं रोकता है।</p>
+  <h2>3. विज्ञापन</h2>
+  <p>Google AdMob और विज्ञापन भागीदार अपनी नीतियों के अनुसार विज्ञापन वितरण, माप और धोखाधड़ी रोकथाम के लिए पहचानकर्ता, डिवाइस जानकारी, इंटरैक्शन और नैदानिक डेटा संसाधित कर सकते हैं। ClipAuth विज्ञापन SDK को सूचना सामग्री या सत्यापन कोड प्रदान नहीं करता है। जहाँ आवश्यक हो, Google UMP सहमति विकल्प प्रस्तुत करता है; उपलब्ध होने पर आप सेटिंग्स से विज्ञापन गोपनीयता विकल्पों को फिर से बदल सकते हैं। Google गोपनीयता नीति: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. वैकल्पिक समर्थन खरीदारी</h2>
+  <p>वैकल्पिक उपभोज्य समर्थन खरीदारी Google Play Billing द्वारा संभाली जाती है। Google भुगतान विवरण संभालता है। ClipAuth खरीदारी पूरी करने के लिए उत्पाद आईडी, खरीद स्थिति और टोकन संसाधित करता है; यह कार्ड या बैंक विवरण संग्रहीत नहीं करता है। कोई सशुल्क सुविधाएँ या खाता पंजीकरण आवश्यक नहीं है।</p>
+  <h2>5. संपर्क और परिवर्तन</h2>
+  <p>इस ऐप के लिए कोई खाता प्रणाली या डेवलपर सर्वर नहीं है। ऐप डेटा साफ़ करने या ऐप अनइंस्टॉल करने पर डिवाइस सेटिंग्स हटा दी जाती हैं। क्लिपबोर्ड और तृतीय-पक्ष डेटा उनकी संबंधित नीतियों के अधीन हैं। गोपनीयता संबंधी पूछताछ: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. डेटा प्रसंस्करण में बदलाव होने पर इस नीति को अद्यतन किया जाएगा।</p>
+</section>
+
+<!-- 23. Čeština (cs) -->
+<section id="cs" lang="cs">
+  <h1>Zásady ochrany osobních údajů</h1>
+  <div class="date-badge">ClipAuth · Aktualizováno 2. října 2026</div>
+  <h2>1. Přístup k oznámením</h2>
+  <p>Po udělení vašeho souhlasu ClipAuth analyzuje obsah oznámení z vybraných aplikací přímo ve vašem zařízení za účelem zjištění ověřovacích kódů. Neodesílá obsah oznámení ani kódy na servery vývojáře, ani je neukládá do souborů nebo protokolů. Ke kopírování dochází pouze tehdy, když je obrazovka zapnutá a odemčená. Omezení systému Android a výrobců zařízení mohou detekci bránit. V nastavení zařízení můžete automatickou detekci vypnout, zrušit výběr aplikací nebo odebrat přístup k oznámením.</p>
+  <h2>2. Nedávná historie a schránka</h2>
+  <p>Nedávné kódy, názvy balíčků zdrojových aplikací a časy zkopírování jsou uchovávány pouze v paměti procesu (maximálně 20 záznamů po dobu 5 minut). Historie se vymaže při vypnutí obrazovky, odpojení služby nebo ukončení procesu. Nastavení a jazyk aplikace jsou uloženy místně. Zálohování dat aplikace je zakázáno. Systémová schránka je samostatná: vymazání historie nebo vypnutí obrazovky schránku nevyprázdní. Příznak citlivého obsahu skrývá systémový náhled na podporovaných verzích, nezabraňuje však vložení nebo uložení klávesnicemi či jinými aplikacemi.</p>
+  <h2>3. Reklama</h2>
+  <p>Google AdMob a reklamní partneři mohou zpracovávat identifikátory, informace o zařízení, interakce a diagnostická data za účelem zobrazování reklam, měření a prevence podvodů v souladu se svými zásadami. ClipAuth neposkytuje reklamnímu SDK žádný obsah oznámení ani ověřovací kódy. V oblastech, kde je to vyžadováno, Google UMP nabízí možnosti udělení souhlasu; nastavení soukromí pro reklamy můžete v aplikaci kdykoli znovu upravit. Zásady ochrany soukromí společnosti Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Volitelné nákupy na podporu</h2>
+  <p>Volitelné spotřební nákupy na podporu vývoje jsou zpracovávány prostřednictvím Google Play Billing. Platební údaje zpracovává společnost Google. ClipAuth zpracovává ID produktů, stav nákupu a tokeny za účelem dokončení nákupu; neukládá údaje o platebních kartách ani bankovních účtech. Aplikace nevyžaduje registraci účtu ani placené funkce.</p>
+  <h2>5. Kontakt a změny</h2>
+  <p>Aplikace nemá žádný systém uživatelských účtů ani vlastní servery. Při vymazání dat aplikace nebo odinstalaci se místní nastavení odstraní. Údaje ve schránce a u služeb třetích stran se řídí jejich vlastními pravidly. Dotazy týkající se ochrany osobních údajů: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Tyto zásady budou aktualizovány v případě změny způsobu zpracování údajů.</p>
+</section>
+
+<!-- 24. Dansk (da) -->
+<section id="da" lang="da">
+  <h1>Privatlivspolitik</h1>
+  <div class="date-badge">ClipAuth · Opdateret 2. oktober 2026</div>
+  <h2>1. Notifikationsadgang</h2>
+  <p>Efter dit samtykke analyserer ClipAuth notifikationsindhold fra valgte apps lokalt på din enhed for at identificere bekræftelseskoder. Notifikationstekster og koder sendes ikke til udviklerservere og gemmes ikke i filer eller logfiler. Kopiering sker kun, når skærmen er tændt og låst op. Begrænsninger i Android eller fra enhedsproducenter kan forhindre registrering. Du kan deaktivere automatisk registrering, fravælge apps eller tilbagekalde notifikationsadgang i enhedens indstillinger.</p>
+  <h2>2. Seneste historik og udklipsholder</h2>
+  <p>Seneste koder, kilde-apps pakkenavne og kopieringstidspunkter opbevares udelukkende i proceshukommelsen (op til 20 poster i 5 minutter). Historikken slettes, når skærmen slukkes, lyttertjenesten afbrydes, eller processen afsluttes. App-indstillinger og sprogvalg gemmes lokalt. Sikkerhedskopiering af appdata er deaktiveret. Systemets udklipsholder er et særskilt område: rydning af historik eller slukning af skærmen tømmer ikke udklipsholderen. Følsomhedsflaget skjuler understøttede systemforhåndsvisninger, men forhindrer ikke indsættelse eller lagring af tastaturer eller andre apps.</p>
+  <h2>3. Annoncering</h2>
+  <p>Google AdMob og annoncepartnere kan behandle identifikatorer, enhedsoplysninger, interaktioner og diagnosticeringsdata til annoncelevering, måling og svindelbekæmpelse i henhold til deres egne politikker. ClipAuth videregiver ikke notifikationsindhold eller bekræftelseskoder til annonce-SDK'et. Hvor det kræves, viser Google UMP samtykkevalg; du kan til enhver tid ændre dine valgmuligheder for annonceprivatliv i indstillingerne. Googles privatlivspolitik: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Valgfrie støttekøb</h2>
+  <p>Valgfrie forbrugsbaserede støttekøb håndteres via Google Play Billing. Google håndterer betalingsoplysningerne. ClipAuth behandler produkt-id'er, købsstatus og tokens for at fuldføre købet; der gemmes ingen kort- eller bankoplysninger. Der kræves ingen betalte funktioner eller brugerkonto.</p>
+  <h2>5. Kontakt og ændringer</h2>
+  <p>Denne app har intet brugersystem eller udviklerservere. Sletning af appdata eller afinstallation af appen sletter alle lokale indstillinger. Data i udklipsholderen og hos tredjeparter er underlagt deres respektive vilkår. Henvendelser om privatliv: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Denne politik opdateres, hvis behandlingen ændres.</p>
+</section>
+
+<!-- 25. Suomi (fi) -->
+<section id="fi" lang="fi">
+  <h1>Tietosuojakäytäntö</h1>
+  <div class="date-badge">ClipAuth · Päivitetty 2. lokakuuta 2026</div>
+  <h2>1. Ilmoitusten käyttöoikeus</h2>
+  <p>Suostumuksesi jälkeen ClipAuth analysoi valitsemiesi sovellusten ilmoitussisältöjä paikallisesti laitteellasi vahvistuskoodien tunnistamiseksi. Se ei lähetä ilmoitusten tekstiä tai koodeja kehittäjän palvelimelle eikä tallenna niitä tiedostoihin tai lokeihin. Kopiointi tapahtuu vain näytön ollessa päällä ja lukituksen avattuna. Androidin ja laitevalmistajien rajoitukset voivat estää havaitsemisen. Voit poistaa automaattisen havaitsemisen käytöstä, poistaa sovellusten valinnan tai peruuttaa ilmoitusten käyttöoikeuden laitteen asetuksista.</p>
+  <h2>2. Viimeaikainen historia ja leikepöytä</h2>
+  <p>Viimeisimmät koodit, lähdesovellusten pakettinimet ja kopiointiajat säilytetään vain prosessin muistissa (enintään 20 merkintää 5 minuutin ajan). Historia poistetaan, kun näyttö sammutetaan, kuuntelupalvelu katkaistaan tai prosessi suljetaan. Sovelluksen asetukset ja kieli tallennetaan paikallisesti. Sovellustietojen varmuuskopiointi on poistettu käytöstä. Järjestelmän leikepöytä on erillinen alue: historian tyhjentäminen tai näytön sammuttaminen ei tyhjennä leikepöytää. Arkaluonteisen sisällön lippu piilottaa tuetut järjestelmän esikatselut, mutta ei estä näppäimistöjen tai muiden sovellusten liittämistä tai tallentamista.</p>
+  <h2>3. Mainonta</h2>
+  <p>Google AdMob ja mainoskumppanit voivat käsitellä tunnisteita, laitetietoja, vuorovaikutuksia ja diagnostiikkatietoja mainosten näyttämistä, mittaamista ja petosten torjuntaa varten omien käytäntöjensä mukaisesti. ClipAuth ei luovuta ilmoitussisältöä tai vahvistuskoodeja mainos-SDK:lle. Vaadituilla alueilla Google UMP tarjoaa suostumusvalinnat; voit muuttaa mainosten tietosuoja-asetuksia milloin tahansa asetuksista. Googlen tietosuojakäytäntö: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Vapaaehtoiset tukitilaukset</h2>
+  <p>Vapaaehtoiset kulutushyödykkeenä toimivat tukitilaukset käsitellään Google Play Billingin kautta. Google käsittelee maksutiedot. ClipAuth käsittelee tuotetunnuksia, ostotiloja ja -tunnuksia oston suorittamiseksi loppuun; se ei tallenna kortti- tai pankkitietoja. Maksullisia lukittuja ominaisuuksia tai käyttäjätiliä ei vaadita.</p>
+  <h2>5. Yhteydenotto ja muutokset</h2>
+  <p>Sovelluksella ei ole tili- tai palvelinjärjestelmää. Sovellustietojen tyhjentäminen tai sovelluksen poistaminen poistaa laitteen asetukset. Leikepöydän ja kolmansien osapuolien tiedot noudattavat niiden omia käytäntöjä. Tietosuojatiedustelut: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Tätä käytäntöä päivitetään, jos käsittelytavat muuttuvat.</p>
+</section>
+
+<!-- 26. Magyar (hu) -->
+<section id="hu" lang="hu">
+  <h1>Adatvédelmi irányelvek</h1>
+  <div class="date-badge">ClipAuth · Frissítve: 2026. október 2.</div>
+  <h2>1. Értesítési hozzáférés</h2>
+  <p>Az Ön hozzájárulását követően a ClipAuth helyben, az eszközén elemzi a kiválasztott alkalmazások értesítési tartalmát az ellenőrző kódok azonosítása érdekében. Nem küld értesítési szövegeket vagy kódokat fejlesztői szerverekre, és nem menti azokat fájlokba vagy naplókba. A másolás csak bekapcsolt és feloldott képernyő mellett történik meg. Az Android és az eszközgyártók korlátozásai gátolhatják az észlelést. Az automatikus észlelést kikapcsolhatja, az alkalmazások társítását törölheti, vagy visszavonhatja az értesítési hozzáférést a készülék beállításaiban.</p>
+  <h2>2. Előzmények és vágólap</h2>
+  <p>A legutóbbi kódokat, a forrásalkalmazások csomagneveit és a másolási időpontokat kizárólag a folyamat memóriájában tárolja (legfeljebb 20 bejegyzést 5 percig). A képernyő kikapcsolásakor, a figyelőszolgáltatás lekapcsolásakor vagy a folyamat leállásakor az előzmények törlődnek. A beállítások és az alkalmazás nyelve helyben tárolódik. Az alkalmazásadatok felhőbe mentése tiltva van. A rendszer vágólapja különálló terület: az előzmények törlése vagy a képernyő kikapcsolása nem üríti ki a vágólapot. Az érzékeny adat jelölő elrejti a támogatott rendszereken az előnézetet, de nem akadályozza meg a billentyűzetek vagy más alkalmazások beillesztését vagy mentését.</p>
+  <h2>3. Hirdetések</h2>
+  <p>A Google AdMob és hirdetési partnerei azonosítókat, eszközadatokat, interakciókat és diagnosztikai információkat kezelhetnek hirdetésmegjelenítés, mérés és csalásmegelőzés céljából a saját szabályzatuk szerint. A ClipAuth nem ad át értesítési tartalmat vagy ellenőrző kódot a hirdetési SDK-nak. Ahol szükséges, a Google UMP felületén adható meg a hozzájárulás; a hirdetési adatvédelmi beállítások a beállításokból bármikor újra módosíthatók. A Google adatvédelmi irányelvei: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Opcionális támogatási vásárlások</h2>
+  <p>Az opcionális fogyóeszköz-jellegű támogatási vásárlások a Google Play Billing rendszerén keresztül zajlanak. A fizetési adatokat a Google kezeli. A ClipAuth a vásárlás befejezéséhez termékazonosítókat, vásárlási állapotot és tokeneket dolgoz fel, nem tárol bankkártya- vagy számlaadatokat. Nincsenek fizetős zárolt funkciók vagy kötelező regisztráció.</p>
+  <h2>5. Kapcsolat és módosítások</h2>
+  <p>Az alkalmazás nem rendelkezik felhasználói fiókrendszerrel vagy fejlesztői szerverrel. Az alkalmazásadatok törlése vagy az app eltávolítása törli az eszközbeállításokat. A vágólapon és harmadik feleknél lévő adatokra a saját szabályzatuk vonatkozik. Adatvédelmi megkeresések: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Az adatkezelés változása esetén ezen irányelvek frissülnek.</p>
+</section>
+
+<!-- 27. Norsk (no) -->
+<section id="no" lang="no">
+  <h1>Personvernerklæring</h1>
+  <div class="date-badge">ClipAuth · Oppdatert 2. oktober 2026</div>
+  <h2>1. Varslingstilgang</h2>
+  <p>Etter ditt samtykke analyserer ClipAuth varslingsinnhold fra apper du velger lokalt på enheten din for å identifisere bekreftelseskoder. Varslingstekster og koder sendes aldri til utviklerservere, og lagres ikke i filer eller logger. Kopiering skjer kun når skjermen er på og ulåst. Begrensninger i Android og fra enhetsprodusenter kan forhindre gjenkjenning. Du kan slå av automatisk gjenkjenning, fjerne apper eller tilbakekalle varslingstilgang i enhetsinnstillingene.</p>
+  <h2>2. Nylig historikk og utklippstavle</h2>
+  <p>Nylige koder, kildeappers pakkenavn og kopieringstidspunkter oppbevares kun i prosessminnet (opptil 20 oppføringer i 5 minutter). Historikken slettes når skjermen slås av, lyttertjenesten kobles fra eller prosessen avsluttes. Innstillinger og valgt app-språk lagres lokalt. Sikkerhetskopiering av appdata er deaktivert. Systemets utklippstavle er et separat område: sletting av historikk eller å slå av skjermen tømmer ikke utklippstavlen. Flagget for sensitivt innhold skjuler støttede forhåndsvisninger i systemet, men hindrer ikke innliming eller lagring fra tastaturer eller andre apper.</p>
+  <h2>3. Annonser</h2>
+  <p>Google AdMob og annonsepartnere kan behandle identifikatorer, enhetsinformasjon, interaksjoner og diagnostikkdata for annonselevering, måling og svindelforebygging i henhold til sine retningslinjer. ClipAuth leverer ikke varslingsinnhold eller koder til annonse-SDK-en. Der det kreves, gir Google UMP samtykkevalg; du kan når som helst endre innstillingene for annonsepersonvern i appens innstillinger. Googles personvernerklæring: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Valgfrie støttekjøp</h2>
+  <p>Valgfrie forbrukskjøp for å støtte utviklingen håndteres via Google Play Billing. Google håndterer betalingsopplysningene. ClipAuth behandler produkt-ID-er, kjøpsstatus og tokener for å fullføre kjøpet; ingen kort- eller bankopplysninger lagres. Ingen betalte funksjoner eller kontoer kreves.</p>
+  <h2>5. Kontakt og endringer</h2>
+  <p>Appen har ingen brukerkontoer eller egne utviklerservere. Sletting av appdata eller avinstallering sletter alle lokale enhetsinnstillinger. Data på utklippstavlen og hos tredjeparter følger deres respektive retningslinjer. Personvernhenvendelser: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Denne erklæringen oppdateres ved endringer i databehandlingen.</p>
+</section>
+
+<!-- 28. Română (ro) -->
+<section id="ro" lang="ro">
+  <h1>Politică de confidențialitate</h1>
+  <div class="date-badge">ClipAuth · Actualizată la 2 octombrie 2026</div>
+  <h2>1. Acces la notificări</h2>
+  <p>Cu acordul dumneavoastră, ClipAuth analizează conținutul notificărilor din aplicațiile selectate local, pe dispozitiv, pentru a identifica codurile de verificare. Nu trimite conținutul notificărilor sau codurile către serverele dezvoltatorului și nu le salvează în fișiere sau jurnale. Copierea are loc doar atunci când ecranul este aprins și deblocat. Restricțiile impuse de Android și de producătorii de dispozitive pot împiedica detectarea. Puteți dezactiva detectarea automată, deselecta aplicațiile sau revoca permisiunea de acces la notificări din setările dispozitivului.</p>
+  <h2>2. Istoric recent și clipboard</h2>
+  <p>Codurile recente, numele pachetelor aplicațiilor sursă și orele de copiere sunt păstrate exclusiv în memoria procesului (până la 20 de intrări timp de 5 minute). Istoricul este șters la oprirea ecranului, deconectarea serviciului sau încheierea procesului. Setările și limba aplicației sunt stocate local. Copierea de rezervă a datelor aplicației este dezactivată. Clipboard-ul sistemului este o zonă separată: ștergerea istoricului sau oprirea ecranului nu golește clipboard-ul. Indicatorul de conținut sensibil ascunde previzualizările pe sistemele compatibile, dar nu împiedică lipirea sau salvarea de către tastaturi ori alte aplicații.</p>
+  <h2>3. Publicitate</h2>
+  <p>Google AdMob și partenerii săi publicitari pot prelucra identificatori, informații despre dispozitiv, interacțiuni și date de diagnosticare pentru afișarea, măsurarea reclamelor și prevenirea fraudelor, conform propriilor politici. ClipAuth nu transmite conținutul notificărilor sau codurile de verificare către SDK-ul publicitar. În regiunile unde este necesar, Google UMP oferă opțiuni de consimțământ; puteți redeschide oricând setările de confidențialitate pentru reclame din setări. Politica de confidențialitate Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Achiziții opționale de sprijin</h2>
+  <p>Achizițiile consumabile opționale de sprijin sunt procesate prin Google Play Billing. Google gestionează datele de plată. ClipAuth procesează ID-urile de produs, starea achiziției și tokenurile pentru a finaliza tranzacția, fără a stoca date bancare sau de card. Nu există funcții plătite blocate și nu este necesară crearea unui cont.</p>
+  <h2>5. Contact și modificări</h2>
+  <p>Aplicația nu deține un sistem de conturi sau servere proprii. Ștergerea datelor aplicației sau dezinstalarea elimină setările de pe dispozitiv. Datele din clipboard și ale serviciilor terțe se supun propriilor reguli. Solicitări privind confidențialitatea: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Această politică va fi actualizată dacă modalitățile de prelucrare se modifică.</p>
+</section>
+
+<!-- 29. Slovenčina (sk) -->
+<section id="sk" lang="sk">
+  <h1>Pravidlá ochrany súkromia</h1>
+  <div class="date-badge">ClipAuth · Aktualizované 2. októbra 2026</div>
+  <h2>1. Prístup k upozorneniam</h2>
+  <p>Po udelení vášho súhlasu ClipAuth analyzuje obsah upozornení z vybraných aplikácií priamo vo vašom zariadení na účely identifikácie overovacích kódov. Neodosiela obsah upozornení ani kódy na servery vývojára a neukladá ich do súborov ani protokolov. Kopírovanie prebieha iba vtedy, keď je obrazovka zapnutá a odomknutá. Obmedzenia systému Android a výrobcov zariadení môžu zabrániť detekcii. V nastaveniach zariadenia môžete automatickú detekciu vypnúť, zrušiť výber aplikácií alebo odobrať prístup k upozorneniam.</p>
+  <h2>2. Nedávna história a schránka</h2>
+  <p>Nedávne kódy, názvy balíkov zdrojových aplikácií a časy skopírovania sa uchovávajú výlučne v pamäti procesu (maximálne 20 položiek po dobu 5 minút). História sa vymaže pri vypnutí obrazovky, odpojení služby alebo ukončení procesu. Nastavenia a jazyk aplikácie sa ukladajú lokálne. Zálohovanie údajov aplikácie je zakázané. Systémová schránka je samostatná: vymazanie histórie alebo vypnutie obrazovky schránku nevyprázdni. Príznak citlivého obsahu skrýva náhľady v podporovaných systémoch, nebráni však prilepeniu alebo uloženiu klávesnicami či inými aplikáciami.</p>
+  <h2>3. Reklama</h2>
+  <p>Google AdMob a reklamní partneri môžu spracúvať identifikátory, informácie o zariadení, interakcie a diagnostické údaje na zobrazovanie reklám, meranie a prevenciu podvodov podľa svojich pravidiel. ClipAuth neposkytuje reklamnému SDK žiadny obsah upozornení ani overovacie kódy. V požadovaných regiónoch Google UMP poskytuje možnosti udelenia súhlasu; nastavenia ochrany súkromia reklám môžete kedykoľvek znova zmeniť v nastaveniach. Pravidlá ochrany súkromia spoločnosti Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Voliteľné nákupy na podporu</h2>
+  <p>Voliteľné spotrebné nákupy na podporu sú spracovávané prostredníctvom Google Play Billing. Platobné údaje spracúva spoločnosť Google. ClipAuth spracúva ID produktov, stav nákupu a tokeny na dokončenie nákupu; neukladá údaje o kartách ani bankových účtoch. Aplikácia nevyžaduje žiadne platené funkcie ani registráciu účtu.</p>
+  <h2>5. Kontakt a zmeny</h2>
+  <p>Aplikácia nemá žiaden systém používateľských účtov ani servery vývojára. Pri vymazaní údajov aplikácie alebo odinštalovaní sa miestne nastavenia odstránia. Údaje v schránke a u tretích strán sa riadia ich vlastnými pravidlami. Otázky týkajúce sa ochrany súkromia: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Tieto pravidlá sa aktualizujú v prípade zmeny spracovania údajov.</p>
+</section>
+
+<!-- 30. Svenska (sv) -->
+<section id="sv" lang="sv">
+  <h1>Integritetspolicy</h1>
+  <div class="date-badge">ClipAuth · Uppdaterad 2 oktober 2026</div>
+  <h2>1. Aviseringsåtkomst</h2>
+  <p>Efter ditt medgivande analyserar ClipAuth aviseringsinnehåll från utvalda appar lokalt på din enhet för att identifiera verifieringskoder. Aviseringstexter och koder skickas inte till utvecklarservern och sparas inte i filer eller loggar. Kopiering sker endast när skärmen är påslagen och upplåst. Begränsningar i Android och från enhetstillverkare kan förhindra identifiering. Du kan stänga av automatisk identifiering, avmarkera appar eller återkalla aviseringsåtkomst i enhetsinställningarna.</p>
+  <h2>2. Senaste historik och urklipp</h2>
+  <p>Senaste koder, källappars paketnamn och kopieringstider sparas endast i processminnet (upp till 20 poster i 5 minuter). Historiken rensas när skärmen stängs av, lyssnartjänsten kopplas från eller processen avslutas. Inställningar och appspråk lagras lokalt. Säkerhetskopiering av appdata är inaktiverad. Systemets urklipp är ett separat område: att rensa historik eller stänga av skärmen tömmer inte urklippet. Känslighetsflaggan döljer systemförhandsgranskningar som stöds, men förhindrar inte inklistring eller lagring av tangentbord eller andra appar.</p>
+  <h2>3. Annonser</h2>
+  <p>Google AdMob och annonspartner kan behandla identifierare, enhetsinformation, interaktioner och diagnostikdata för annonsvisning, mätning och bedrägeribekämpning i enlighet med sina policyer. ClipAuth tillhandahåller inget aviseringsinnehåll eller verifieringskoder till annons-SDK:n. Där det krävs visar Google UMP samtyckesval; du kan när som helst ändra inställningarna för annonsintegritet under inställningar. Googles integritetspolicy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  <h2>4. Valfria stödköp</h2>
+  <p>Valfria förbrukningsköp för att stödja appen hanteras via Google Play Billing. Google hanterar betalningsuppgifterna. ClipAuth behandlar produkt-ID:n, köpstatus och token för att slutföra köpet; inga kort- eller bankuppgifter lagras. Det finns inga betalfunktioner eller krav på konton.</p>
+  <h2>5. Kontakt och ändringar</h2>
+  <p>Appen har inget användarkontosystem eller någon utvecklarserver. Radering av appdata eller avinstallation raderar alla inställningar på enheten. Data i urklipp och hos tredjepartstjänster följer deras respektive regler. Förfrågningar om integritet: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>. Denna policy uppdateras om hanteringen ändras.</p>
+</section>
+
+</main>
+
+<footer>
+  &copy; 2026 ClipAuth. All rights reserved. · Privacy inquiries: <a href="mailto:leechangmin565@gmail.com">leechangmin565@gmail.com</a>
+</footer>
+
+<script>
+function switchLanguage(langCode) {
+  const target = document.getElementById(langCode);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    history.replaceState(null, null, '#' + langCode);
+  }
+}
+
+// URL 해시 또는 브라우저 언어에 따른 초기 언어 선택 동기화
+window.addEventListener('DOMContentLoaded', () => {
+  const hash = window.location.hash.replace('#', '');
+  const select = document.getElementById('lang-dropdown');
+  if (hash && document.getElementById(hash)) {
+    select.value = hash;
+  } else {
+    // 브라우저 언어 감지
+    const userLang = (navigator.language || navigator.userLanguage || 'ko').toLowerCase();
+    const exactMatch = Array.from(select.options).find(opt => opt.value.toLowerCase() === userLang);
+    if (exactMatch) {
+      select.value = exactMatch.value;
+      document.getElementById(exactMatch.value).scrollIntoView();
+    } else {
+      const prefix = userLang.split('-')[0];
+      const prefixMatch = Array.from(select.options).find(opt => opt.value.toLowerCase() === prefix);
+      if (prefixMatch) {
+        select.value = prefixMatch.value;
+        document.getElementById(prefixMatch.value).scrollIntoView();
+      }
+    }
+  }
+});
+</script>
+
+</body>
+</html>
